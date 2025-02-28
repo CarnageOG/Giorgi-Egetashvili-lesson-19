@@ -52,8 +52,10 @@ charactersList.innerHTML = characters
   .map(
     (char, index) => `
       <div class="character-card" id="char-${index}">
-        <h3>${char.first_name} ${char.last_name}</h3>
-        <p>House: ${char.house}</p>
+        <div class="layout">
+            <h1>${char.first_name} ${char.last_name}</h3>
+            <p>House: ${char.house}</p>
+        </div>
         <img src="${char.image}" alt="${char.first_name}" class="character-image">
         <button class="delete-btn" onclick="removeCharacter(${index})">წაშლა</button>
         <button class="info-btn" onclick="showInfo(${index})">ინფო</button>
