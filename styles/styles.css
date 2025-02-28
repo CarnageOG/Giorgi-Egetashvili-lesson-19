@@ -1,0 +1,67 @@
+body {
+  background-color: #0c1b44;
+}
+
+#characters-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.character-card {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 400px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.character-image {
+  width: 80px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.character-info {
+  display: none;
+  font-size: 14px;
+  color: #555;
+}
+
+.delete-btn, .info-btn {
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.delete-btn {
+  background: red;
+  color: white;
+}
+
+.info-btn {
+  background: blue;
+  color: white;
+}
+
+.character-details {
+  flex: 1;
+  margin-left: 10px;
+}
+
+h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+p {
+  margin: 5px 0;
+}
